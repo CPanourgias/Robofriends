@@ -2,6 +2,10 @@
 import Card from './Card';
 
 const CardList = ({ robots }) => {
+  // Test Error
+  // if (true) {
+  //   throw new Error('Nooo');
+  // }
   return (
     <div>
       {
