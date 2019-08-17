@@ -1,10 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# robofriends-pwa
+Udemy tutorial - adding PWA capabilities to a react app
 
-## Robofriends
+To run the project:
 
-A simple app which creates images by calling [Robohash API](https://robohash.org/), using information from [JSONplaceholder](https://jsonplaceholder.typicode.com/)/users. Featuring a simple live search.
-
-Run `npm install`/`npm start` in the project directory
-
-Done during the course The Complete Web Developer in 2019: Zero to Mastery. Big thanks to [Andrei](https://github.com/aneagoie)
-
+1. Clone this repo
+2. Run `npm install`
+3. Run `npm start`

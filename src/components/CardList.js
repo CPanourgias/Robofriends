@@ -1,11 +1,8 @@
-    import React from 'react';
+import React from 'react';
 import Card from './Card';
 
 const CardList = ({ robots }) => {
-  // Test Error
-  // if (true) {
-  //   throw new Error('Nooo');
-  // }
+  console.log('CardList');
   return (
     <div>
       {
