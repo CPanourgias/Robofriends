@@ -2,7 +2,6 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.2.0",
@@ -23,6 +22,19 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "jest": "^24.9.0"
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
