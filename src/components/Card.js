@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card ({ username, name, email }) {
+export default function Card ({ username, name, email, phone }) {
     return (
         <div className='bg-light-green dib br3 pa2 ma2 grow bw2 shadow-5
         '>
@@ -8,6 +8,7 @@ export default function Card ({ username, name, email }) {
             <div>
                 <h2>{ name }</h2>
                 <p>{ email }</p>
+                <p>{ phone }</p>
             </div>
         </div>
     );

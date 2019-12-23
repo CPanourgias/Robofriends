@@ -11,6 +11,7 @@ const CardList = ({ robots }) => {
                         username = {robot.username}
                         name = {robot.name}
                         email = {robot.email}
+                        phone = {robot.phone}
                     />
                 })
             }
