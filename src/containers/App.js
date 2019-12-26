@@ -1,14 +1,10 @@
 import React, { Component } from "react";
-import CardList from "../components/CardList";
-import SearchBox from "../components/SearchBox";
-import Scroll from "../components/Scroll";
-import Header from "../components/Header";
-import ErrorBoundary from "../components/ErrorBoundary";
 
 import '../styles/App.css'
 import { connect } from 'react-redux';
 import { setSearchField } from "../actions/SetSearchFieldAction";
 import { requestRobots } from "../actions/RequestRobotsAction";
+import MainPage from "../components/MainPage";
 
 
 const mapStateToProps = state => {
@@ -30,28 +26,7 @@ const mapDispatchToProps = (dispatch) => {
 
 class App extends Component{
 
-    componentDidMount() {
-        this.props.onRequestRobots();
-    }
-
-    render() {
-        const { searchField, onSearchChange, robots, isPending } = this.props,
-            filteredRobots = robots.filter(robot => {
-                return robot.name.toLowerCase().includes(searchField.toLowerCase())
-            });
-
-        return isPending ?
-            <h1>Loading</h1> :
-            <div className="tc">
-                <Header/>
-                <SearchBox searchChange={onSearchChange}/>
-                <Scroll>
-                    <ErrorBoundary>
-                        <CardList robots={filteredRobots}/>
-                    </ErrorBoundary>
-                </Scroll>
-            </div>;
-    }
+    render() { return <MainPage { ...this.props }/>}
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
